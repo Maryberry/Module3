@@ -1,4 +1,7 @@
 #2015
+#rm(list=ls()) 
+#unlink(".RData") 
+
 X = t(read.table("http://www.broadinstitute.org/mpr/publications/projects/NMF/ALL_AML_data.txt"))
 y = read.table("http://www.broadinstitute.org/mpr/publications/projects/NMF/ALL_AML_samples.txt", sep = "\t")[[1]]
 AMLvsALL = substr(y,1,3)
